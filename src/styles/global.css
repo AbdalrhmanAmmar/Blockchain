@@ -25,3 +25,24 @@
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
+
+.mask-card {
+  mask-image: linear-gradient(
+    225deg,
+    transparent,
+    transparent 40px,
+    black 40px
+  );
+  -webkit-mask-image: linear-gradient(
+    225deg,
+    transparent,
+    transparent 40px,
+    black 40px
+  );
+}
+
+.CardImgMask {
+  mask-image: radial-gradient(closest-side, black, transparent);
+
+  -webkit-mask-image: radial-gradient(closest-side, black, transparent);
+}

@@ -1,4 +1,6 @@
+import Circle from "../components/UI/Circle";
 import CutCornerButton from "../components/UI/CutCornerButton";
+import { Hexagon } from "../components/UI/Hexagon";
 
 function HeroSection() {
   return (
@@ -20,22 +22,40 @@ function HeroSection() {
         <div className="flex justify-center  mt-24">
           <div className="inline-flex  relative z-0">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-              <svg
-                width="82"
-                height="72"
-                viewBox="0 0 82 72"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="6"
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-[1100px] text-fuchsia-500/10"
-              >
-                <path
-                  d="M3.44337 38.5C2.55021 36.953 2.55021 35.047 3.44338 33.5L20.0566 4.72501C20.9498 3.178 22.6004 2.22501 24.3868 2.22501H57.6132C59.3996 2.22501 61.0502 3.178 61.9434 4.72501L78.5566 33.5C79.4498 35.047 79.4498 36.953 78.5566 38.5L61.9434 67.275C61.0502 68.822 59.3996 69.775 57.6132 69.775H24.3867C22.6004 69.775 20.9498 68.822 20.0566 67.275L3.44337 38.5Z"
-                  vector-effect="non-scaling-stroke"
-                />
-              </svg>
+              <Hexagon className="size-[1100px]" />
             </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Hexagon className="size-[1800px]" />
+            </div>
+
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute left-[200px] -top-[900px]">
+                <img
+                  src="/assets/images/cube.png"
+                  alt="Cube 3D image"
+                  className="size-[140px]"
+                />
+              </Circle>
+            </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute left-[200px] -top-[-270px]">
+                <img
+                  src="/assets/images/cuboid.png"
+                  alt="Cube 3D image"
+                  className="size-[140px]"
+                />
+              </Circle>
+            </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute -left-[600px] -top-[80px]">
+                <img
+                  src="/assets/images/torus.png"
+                  alt="Cube 3D image"
+                  className="size-[140px]"
+                />
+              </Circle>
+            </div>
+
             <img
               className="absolute w-[calc(100%+100px)] max-w-none -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 saturate-[10%] brightness-[4%] hue-rotate-[225deg] "
               src="/assets/images/icosahedron.png"
@@ -47,6 +67,15 @@ function HeroSection() {
               className="w-[500px]"
             />
           </div>
+        </div>
+
+        <div className="flex items-center flex-col space-y-4 justify-center mt-40 md:mt-80">
+          <div className="w-5 h-10 rounded-full bg-transparent outline outline-[6px] outline-fuchsia-500/10 relative">
+            <div className="w-1 h-3 bg-fuchsia-500 rounded-full absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+          <p className="text-center uppercase font-extrabold text-zinc-500 tracking-wider ">
+            scroll to learn more
+          </p>
         </div>
       </div>
     </section>
