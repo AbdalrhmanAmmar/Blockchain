@@ -7,7 +7,7 @@ interface IpropsCard {
 function CardDataComponent({ card }: IpropsCard) {
   return (
     <>
-      <div className="relative z-0 p-8 md:p-10 md:pt-2  max-w-xs md:max-w-md  group   ">
+      <div className="relative z-0 p-8 md:p-10 md:pt-10  max-w-xs md:max-w-md  group   ">
         <div
           className={twMerge(
             "size-16 rounded-xl bg-fuchsia-500 right-1.5 top-1.5 absolute -z-10 blur-2xl opacity-0 group-hover:opacity-100",
@@ -28,10 +28,10 @@ function CardDataComponent({ card }: IpropsCard) {
             }[card.color]
           )}
         ></div>
-        <div className="inset-0 absolute bg-zinc-800 -z-10 rounded-2xl mask-card space-y-8 "></div>
+        <div className="inset-0 absolute bg-zinc-800  -z-10 rounded-2xl mask-card space-y-8 "></div>
         <div className="flex justify-center -mt-28">
           <div className="inline-flex relative">
-            <div className="absolute h-4 w-full bg-zinc-950/70 group-hover:bg-zinc-950/30 transition duration-300 top-[calc(100%+16px)] rounded-[100%] CardImgMask"></div>
+            <div className=" absolute h-4 w-full bg-zinc-950/70 group-hover:bg-zinc-950/30 transition duration-300 top-[calc(100%+16px)] rounded-[100%] CardImgMask"></div>
             <img
               className="size-40 group-hover:-translate-y-6  transition duration-300 "
               src={card.image}
