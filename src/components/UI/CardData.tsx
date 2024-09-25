@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import type { ICardData } from "../../../data/interface";
+import type { ICardData } from "../../../interface";
 
 interface IpropsCard {
   card: ICardData;

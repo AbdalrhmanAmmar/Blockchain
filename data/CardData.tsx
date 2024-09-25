@@ -1,4 +1,4 @@
-import type { ICardData } from "./interface";
+import type { ICardData } from "../interface";
 
 export const CardData: ICardData[] = [
   {

@@ -6,7 +6,7 @@ function FeatureGrid() {
     <section className="py-24 md:py-30 overflow-clip">
       <div className="container">
         <div className="flex flex-col gap-56 md:gap-48 lg lg:gap-80">
-          <div className="grid grid-cols-3 gap-8 lg:gap-9">
+          <div className="md:grid grid-cols-3 gap-8 lg:gap-9">
             <div className="col-span-2 flex flex-col gap-8  ">
               <h2 className="text-4xl md:text-5xl lg:text-6xl   text-start font-heading font-black">
                 Empowering the future of blockchain.
@@ -46,7 +46,7 @@ function FeatureGrid() {
               </div>
             </div>
 
-            <div>
+            <div className="hidden md:block">
               <div className="inline-flex relative z-10">
                 <img
                   className="size-96 max-w-none"
@@ -62,8 +62,8 @@ function FeatureGrid() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8">
-            <div className="relative">
+          <div className="md:grid grid-cols-3 gap-8">
+            <div className="relative hidden md:block">
               <div className="absolute right-0">
                 <img
                   className="size-96 max-w-none "
@@ -77,11 +77,11 @@ function FeatureGrid() {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-6 pt-1  col-span-2">
+            <div className="flex flex-col gap-6   col-span-2">
               <h2 className="text-4xl md:text-5xl lg:text-6xl   text-start font-heading font-black">
                 Blockforge leads the way.
               </h2>
-              <p className="text-xl lg:text-2xl  text-red-400 ">
+              <p className="text-xl lg:text-2xl  ">
                 Blockforge is dedicated to supporting the evolution of Web3
                 applications by delivering the necessary infrastructure and
                 security for Web3

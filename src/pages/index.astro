@@ -4,11 +4,13 @@ import FeatureCard from "../sections/FeatureCard";
 import HeaderSection from "../sections/Header";
 import HeroSection from "../sections/Hero";
 import FeatureGrid from "../sections/FeatureGrid";
+import LatestPosts from "../sections/LatestPosts";
 ---
 
 <DefaultLayout>
   <HeaderSection/>
-  <HeroSection/>
+  <HeroSection client:load/>
   <FeatureCard/>
  <FeatureGrid/>
+ <LatestPosts/>
 </DefaultLayout>
